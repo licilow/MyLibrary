@@ -15,7 +15,7 @@ public class User {
     private List<Integer> re = new ArrayList<Integer>();
     private List<Timestamp> date = new ArrayList<Timestamp>();
     private int enroll;
-    private int card;
+    private int cardID;
     private int type;
 
     public String getFcmToken() {
@@ -49,11 +49,11 @@ public class User {
 
 
 
-    public User(String name, String email, int enroll, int card, int type) {
+    public User(String name, String email, int enroll, int cardID, int type) {
         this.name = name;
         this.email = email;
         this.enroll = enroll;
-        this.card = card;
+        this.cardID = cardID;
         this.type = type;
     }
 
@@ -113,12 +113,12 @@ public class User {
         this.enroll = enroll;
     }
 
-    public int getCard() {
-        return card;
+    public int getCardID() {
+        return cardID;
     }
 
-    public void setCard(int card) {
-        this.card = card;
+    public void setCardID(int cardID) {
+        this.cardID = cardID;
     }
 }
 
