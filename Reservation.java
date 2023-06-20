@@ -11,21 +11,21 @@ import java.util.Date;
  */
 public class Reservation {
 
-    private final Customer customer;
-    private final IRoom room;
+    private final Customer Customer;
+    private final IRoom Room;
     private final Date checkInDate;
     private final Date checkOutDate;
 
-    public Reservation(final Customer customer, final IRoom room,
+    public Reservation(final Customer Customer, final IRoom Room,
                        final Date checkInDate, final Date checkOutDate) {
-        this.customer = customer;
-        this.room = room;
+        this.Customer = Customer;
+        this.Room = Room;
         this.checkInDate = checkInDate;
         this.checkOutDate = checkOutDate;
     }
 
     public IRoom getRoom() {
-        return this.room;
+        return this.Room;
     }
 
     public Date getCheckInDate() {
@@ -38,8 +38,8 @@ public class Reservation {
 
     @Override
     public String toString() {
-        return "Customer: " + this.customer.toString()
-                + "\nRoom: " + this.room.toString()
+        return "Customer: " + this.Customer.toString()
+                + "\nRoom: " + this.Room.toString()
                 + "\nCheckIn Date: " + this.checkInDate
                 + "\nCheckOut Date: " + this.checkOutDate;
     }
